@@ -62,14 +62,14 @@
 .main-content{
     margin-left: 345px;
 }
-header {
+header{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     position: fixed;
     left: 345px;
-    width: calc (100% - 345px);
+    width: calc(100% - 345px);
     top: 0;
     z-index: 100;
 }
@@ -135,18 +135,58 @@ main{
     font-size: 3rem;
     color: var(--main-color);
 }
-.card-single span:first-child span{
+.card-single div:first-child span{
     color: var(--text-grey);
 }
-.card-single div:last-child {
+.card-single:last-child {
     background: var(--main-color);
 }
-.card-single div:last-child h1{
-    background: var(--main-color);
-}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child,
 .card-single:last-child div:last-child span{
     color: #fff;
 }
-.card-single:last-child div:first-child span{
+.recent-grid {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 67% auto;
+}
+.card {
+    background: #fff;
+    border-radius: 5px;
+}
+.card-header,
+.card-body{
+    padding: 1rem;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+.card-header button{
+    background: var(--main-color);
+    border-radius: 10px;
     color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var (--main-color);
+}
+table{
+    border-collapse: collapse;
+}
+thead tr{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+thead td{
+    font-weight: 700;
+}
+td{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: #222;
 }
